@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Profile</title>
+
+<link href="https://dl.dropboxusercontent.com/s/zzsvjrtfnnjyiul/travel.css" rel="stylesheet" type="text/css">
+
+<script type='text/javascript'>
+function changeCSS(cssFile) {
+
+        var oldlink = document.getElementsByTagName("link").item(0);
+
+        var newlink = document.createElement("link")
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+      }
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="header"><img src="https://dl.dropboxusercontent.com/s/7f84r8c5opqrc9d/header.png" alt="Discover Palawan"></div> <!-- end of header div -->
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+
+			<li><a href="activities.html">Activities</a></li>
+			<li><a href="photos.html">Photos</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="sitemap.html">Sitemap/Links</a></li>
+		</ul>
+
+	</div> <!-- end of menu div -->
+
+<div id="about_content">
+
+	<div id="left_about">
+
+	<h2>About Palawan</h2>
+	<p>Palawan is located in the Western Visayas Region in the Philippines. Being a top destination for tourist and locals there are airline flights from Manila (capital of the Philippines) to Palawan every day, travel time is estimated to be about 30 minutes. There are many choices of hotels and resorts in Palawan which offers friendly hospitality, a cuisine sure to please your palate and world class services that will definitely give you an experience of a lifetime.</p>
+
+	<div align="left"><a href=" http://hyperdisc.unitec.ac.nz/iwd13s1/guerrm01iwd/Assignment1/newsfeed.xml ">
+      <img src="rss.gif"alt="newsfeed"></a></div>
+
+	<p><a href="#" onclick="changeCSS('css/travel.css');">STYLE 1</a><a href="#"
+	onclick="changeCSS('css/explore.css');">STYLE 2</a></p>
+	<p class="copyright">&copy;Copyright 2013 by Michael Guerrero</p>
+
+	</div> <!-- end of left about div -->
+
+
+	<div id="right_about">
+	  <div align="right"><img src="images/plane.jpg" alt="30 mintue plane ride to Palawan" ></div>
+
+	</div> <!-- end of right about div -->
+
+
+</div> <!-- end about content div -->
+
+</div> <!-- end of wrapper div -->
+
+
+
+</body>
+</html>

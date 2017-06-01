@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Discover Palawan</title>
+
+
+<link href="css/travel.css" rel="stylesheet" type="text/css">
+
+<script type='text/javascript'>
+var imageID=0;
+function changeimage(every_seconds){
+    <!-- change the image -->
+    if(!imageID){
+        document.getElementById("myimage").src="images/slide_palawan.jpg";
+        imageID++;
+    }
+    else{if(imageID==1){
+        document.getElementById("myimage").src="images/slidebench.jpg";
+        imageID++;
+    }else{if(imageID==2){
+        document.getElementById("myimage").src="images/slidelagoon.jpg";
+        imageID=0;
+    }}}
+    <!-- call same function again for x of seconds -->
+    setTimeout("changeimage("+every_seconds+")",((every_seconds)*1000));
+}
+
+function changeCSS(cssFile) {
+ 
+        var oldlink = document.getElementsByTagName("link").item(0);
+ 
+        var newlink = document.createElement("link")
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+ 
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+      }
+	  
+</script>
+
+</head>
+
+<body onload='changeimage(2)'>
+
+<div id="wrapper">
+	<div id="header"><img src="images/header.png" alt="Discover Palawan"></div> <!-- end of header div -->
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			
+			<li><a href="activities.html">Activities</a></li>
+			<li><a href="photos.html">Photos</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="sitemap.html">Sitemap/Links</a></li>
+		</ul>
+		
+	</div> <!-- end of menu div -->
+	
+	<div align="center">
+	  <img src='images/slide_palawan.jpg' name="myimage" id='myimage'/>
+  </div>
+	 
+	<div id="content">
+		<div id="left_content">
+		
+			<h1>DISCOVER PALAWAN</h1>
+			<p class="copyright">&copy;Copyright 2013 by Michael Guerrero</p>
+			<p><a href="#" onclick="changeCSS('css/travel.css');">STYLE 1</a><a href="#" 
+			onclick="changeCSS('css/explore.css');">STYLE 2</a></p>	
+					
+		</div> <!-- end of left content div -->
+		
+		<div id="right_content">
+			
+			<p>Welcome to Palawan Philippines. Voted as one of the Top 20 destinations of the world by National Geographic Magazine in 2011, be captivated by the paradise beaches and pristine natural wonders of Palawan. May this page serve as a simple appreciation of the beauty the islands of the Philippines have to offer. </p>
+		
+		</div> <!-- end of right content div -->
+	
+	</div> <!-- end of content div -->
+
+				
+</div> <!-- end of wrapper div -->
+
+</body>
+</html>

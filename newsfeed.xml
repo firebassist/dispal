@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+
+<channel>
+
+<title>Newsfeed for Discover Palawan website</title>
+<description>Newsfeed from Philippine websites</description>
+<link>http://hyperdisc.unitec.ac.nz/iwd13s1/guerrmo1iwd/Assignment1/</link>
+
+<item>
+<title>ABS CBN News</title>
+<description>To receive local news/description>
+<link>http://www.abs-cbnnews.com
+</link>
+</item>
+
+<item>
+<title>Yahoo Philippines</title>
+<description>To receive entertainment updates/description>
+<link>http://www.yahoo.com.ph
+</link>
+</item>
+
+
+
+</channel>
+</rss>
