@@ -54,17 +54,17 @@ function MM_validateForm() { //v4.0
 
 <script type='text/javascript'>
 function changeCSS(cssFile) {
- 
+
         var oldlink = document.getElementsByTagName("link").item(0);
- 
+
         var newlink = document.createElement("link")
         newlink.setAttribute("rel", "stylesheet");
         newlink.setAttribute("type", "text/css");
         newlink.setAttribute("href", cssFile);
- 
+
         document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
       }
-	  
+
 </script>
 
 </head>
@@ -77,60 +77,62 @@ function changeCSS(cssFile) {
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="profile.html">Profile</a></li>
-			
+
 			<li><a href="activities.html">Activities</a></li>
 			<li><a href="photos.html">Photos</a></li>
 			<li><a href="contact.html">Contact Us</a></li>
 			<li><a href="sitemap.html">Sitemap/Links</a></li>
 		</ul>
-		
+
 	</div> <!-- end of menu div -->
 
 <div id="contact_content">
-	
+
 	<div id="left_contact">
-	<form onSubmit="MM_validateForm('name','','R','address','','R','email','','RisEmail','text','','R');return document.MM_returnValue">
-	<fieldset><strong>CONTACT US</strong><table cellpadding=2 cellspacing=5>
-        
-        
-		<tr> 
-          <td valign="top"><label for="name">Name</label></td>
-          <td><input name="name" type="text" class="input" id="name" size="35" maxlength="50"></td>
-        </tr>
-        <tr> 
-          <td valign="top"><label for="address">Address</label></td>
-          <td><input name="address" type="text" class="input" id="address" size="35" maxlength="50"></td>
-        </tr>
-        <tr> 
-          <td valign="top"><label for="email">Email</label></td>
-          <td><input name="email" type="text" class="input" id="email" size="35" maxlength="50"></td>
-        </tr>
-        
-        <tr> 
-          <td valign="top">Details</td>
-          <td valign="top"><textarea NAME="text" id="text" cols="35" rows="3"></textarea></td>
-        </tr>
+
+		<form name="contactform" method="post" action="email.php">
+			<fieldset><strong>YOUR FEEDBACK</strong>
 				
-		</table>
-		
-		<p align="left"><input TYPE="submit" value="Submit"></p>
-		
-	 </fieldset>
-	</form>
+				<br>
+
+				<table cellpadding=5 cellspacing=10>
+
+					<tr>
+	          <td valign="top"><label for="name">Name</label></td>
+	          <td><input name="name" type="text" class="input" id="name" size="40" maxlength="50"></td>
+	        </tr>
+
+	        <tr>
+	          <td valign="top"><label for="email">Email</label></td>
+	          <td><input name="email" type="text" class="input" id="email" size="40" maxlength="50" ></td>
+	        </tr>
+
+	        <tr>
+	          <td valign="top">Details</td>
+	          <td valign="top"><textarea name="text" id="text" cols="40" rows="8"></textarea></td>
+	        </tr>
+
+				</table>
+
+				<p align="left"><input TYPE="submit" value="Submit"></p>
+
+	 		</fieldset>
+		</form>
+
 	</div> <!-- end of left contact div -->
-	
+
 	<div id="right_contact">
-		
+
 	  <div align="right"><img src="images/port.jpg" alt="port"></div>
-	  
+
 	</div> <!-- end of right contact div -->
-	
-	
+
+
 </div> <!-- end of contact content div -->
 
 	<p class="copyright">&copy;Copyright 2013 by Michael Guerrero</p>
 	<a href="#" onclick="changeCSS('css/travel.css');">STYLE 1</a>
-  	<a href="#" onclick="changeCSS('css/explore.css');">STYLE 2</a>	
+  	<a href="#" onclick="changeCSS('css/explore.css');">STYLE 2</a>
 </div> <!-- end of wrapper div -->
 
 
